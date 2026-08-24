@@ -1,0 +1,714 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--Project was exported from assembly: E:\Ramesh Pawn Soft\Pawnstar\Release\PawnManagement.exe-->
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0D25609A-3E87-4BA6-A5D9-AAF00A92AD7E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AssemblyName>PawnManagement</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+    <ApplicationVersion>2.0.0.0</ApplicationVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BorderLabel">
+      <HintPath>lib\BorderLabel.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu_UI_v1.52">
+      <HintPath>lib\Bunifu_UI_v1.52.dll</HintPath>
+    </Reference>
+    <Reference Include="CSharpCustomPanelControl">
+      <HintPath>lib\CSharpCustomPanelControl.dll</HintPath>
+    </Reference>
+    <Reference Include="ControlTreeView">
+      <HintPath>lib\ControlTreeView.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine">
+      <HintPath>lib\CrystalDecisions.CrystalReports.Engine.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportSource">
+      <HintPath>lib\CrystalDecisions.ReportSource.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.Shared">
+      <HintPath>lib\CrystalDecisions.Shared.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.Windows.Forms">
+      <HintPath>lib\CrystalDecisions.Windows.Forms.dll</HintPath>
+    </Reference>
+    <Reference Include="CustomDataGridView">
+      <HintPath>lib\CustomDataGridView.dll</HintPath>
+    </Reference>
+    <Reference Include="DocumentFormat.OpenXml">
+      <HintPath>lib\DocumentFormat.OpenXml.dll</HintPath>
+    </Reference>
+    <Reference Include="ExtendedDotNET.Controls">
+      <HintPath>lib\ExtendedDotNET.Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="GlassButton">
+      <HintPath>lib\GlassButton.dll</HintPath>
+    </Reference>
+    <Reference Include="KISControls">
+      <HintPath>lib\KISControls.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Office.Interop.Excel">
+      <HintPath>lib\Microsoft.Office.Interop.Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationFramework" />
+    <Reference Include="SecuGen.FDxSDKPro.Windows">
+      <HintPath>lib\SecuGen.FDxSDKPro.Windows.dll</HintPath>
+    </Reference>
+    <Reference Include="SecuSearchMx.NET">
+      <HintPath>lib\SecuSearchMx.NET.dll</HintPath>
+    </Reference>
+    <Reference Include="SmsTextLcoal">
+      <HintPath>lib\SmsTextLcoal.exe</HintPath>
+    </Reference>
+    <Reference Include="SquareButton">
+      <HintPath>lib\SquareButton.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Touchless.Vision">
+      <HintPath>lib\Touchless.Vision.dll</HintPath>
+    </Reference>
+    <Reference Include="Transitions">
+      <HintPath>lib\Transitions.dll</HintPath>
+    </Reference>
+    <Reference Include="UserInactivityMonitoring">
+      <HintPath>lib\UserInactivityMonitoring.dll</HintPath>
+    </Reference>
+    <Reference Include="ZeeUIUtility">
+      <HintPath>lib\ZeeUIUtility.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ImageExtensions.cs" />
+    <Compile Include="System\Windows\Forms\Extensions.cs" />
+    <Compile Include="System\Windows\Forms\SecureTextBox.cs" />
+    <Compile Include="ConnectionstringatRuntime\Form1.cs" />
+    <Compile Include="SignUpDemo\Form1.cs" />
+    <Compile Include="WIATest\WIAScanner.cs" />
+    <Compile Include="Scannerapplication\Form1.cs" />
+    <Compile Include="CodeProject\GraphicalOverlay.cs" />
+    <Compile Include="sgdm\MainForm.cs" />
+    <Compile Include="JR\Utils\GUI\Forms\FlexibleMessageBox.cs" />
+    <Compile Include="Rokad\FORMS\FormLedgerMasterAddUpdate.cs" />
+    <Compile Include="ExportToExcel11\CreateExcelFile.cs" />
+    <Compile Include="OutlookStyleControls\DataSourceRowComparer.cs" />
+    <Compile Include="OutlookStyleControls\DataSourceRow.cs" />
+    <Compile Include="OutlookStyleControls\DataSourceManager.cs" />
+    <Compile Include="OutlookStyleControls\OutlookGrid.cs" />
+    <Compile Include="OutlookStyleControls\IOutlookGridGroup.cs" />
+    <Compile Include="OutlookStyleControls\OutlookgGridDefaultGroup.cs" />
+    <Compile Include="OutlookStyleControls\OutlookGridAlphabeticGroup.cs" />
+    <Compile Include="OutlookStyleControls\OutlookGridRow.cs" />
+    <Compile Include="OutlookStyleControls\OutlookGridRowComparer.cs" />
+    <Compile Include="Jewellery\CompanyDetailsClass.cs" />
+    <Compile Include="PawnManagement\AES.cs" />
+    <Compile Include="PawnManagement\BorderDrawer.cs" />
+    <Compile Include="PawnManagement\ClasstblOrder.cs" />
+    <Compile Include="PawnManagement\ShopDetailsClass.cs" />
+    <Compile Include="PawnManagement\PledgeArticlesClass.cs" />
+    <Compile Include="PawnManagement\PledgeClass.cs" />
+    <Compile Include="PawnManagement\ColouredTextBox.cs" />
+    <Compile Include="PawnManagement\Form1.cs" />
+    <Compile Include="PawnManagement\FormCustomerLocationReport.cs" />
+    <Compile Include="PawnManagement\FormInterestDummy.cs" />
+    <Compile Include="PawnManagement\FormLedgerDetails.cs" />
+    <Compile Include="PawnManagement\FormDataGridView.cs" />
+    <Compile Include="PawnManagement\FormErrorsJewelsReleasedButStillInBank.cs" />
+    <Compile Include="PawnManagement\FormMoneyCalculator.cs" />
+    <Compile Include="PawnManagement\FormPaymentDetailsForBillNumber.cs" />
+    <Compile Include="PawnManagement\FormPendingInterestReports.cs" />
+    <Compile Include="PawnManagement\FormPartPayment.cs" />
+    <Compile Include="PawnManagement\FormAboutBox.cs" />
+    <Compile Include="PawnManagement\FormChangeInterest.cs" />
+    <Compile Include="PawnManagement\FormCompleteSummary.cs" />
+    <Compile Include="PawnManagement\FormDeleteDuplicateCustomer.cs" />
+    <Compile Include="PawnManagement\FormDeletePledgeTill.cs" />
+    <Compile Include="PawnManagement\formEncryptionDecryption.cs" />
+    <Compile Include="PawnManagement\FormChangeToAes.cs" />
+    <Compile Include="PawnManagement\FormInactivityMonitor.cs" />
+    <Compile Include="PawnManagement\FormLedgerBook.cs" />
+    <Compile Include="PawnManagement\FormMenusettin.cs" />
+    <Compile Include="PawnManagement\FormPartPaymentReports.cs" />
+    <Compile Include="PawnManagement\FormPledgeInterest.cs" />
+    <Compile Include="PawnManagement\FormRokadReportsConsolidated.cs" />
+    <Compile Include="PawnManagement\FormPrintRokad.cs" />
+    <Compile Include="PawnManagement\FormPrintSettings.cs" />
+    <Compile Include="PawnManagement\FormViewCustomerDetails.cs" />
+    <Compile Include="PawnManagement\FormAuctionReports.cs" />
+    <Compile Include="PawnManagement\FormCustomerInterestSummary.cs" />
+    <Compile Include="PawnManagement\FormRedemptionINTEREST16YearlySummary.cs" />
+    <Compile Include="PawnManagement\FormRedemptionInterestMonthlySummary.cs" />
+    <Compile Include="PawnManagement\FormNumberOfRedemptionBillsConsolidated.cs" />
+    <Compile Include="PawnManagement\FormPledgeAmountSummary.cs" />
+    <Compile Include="PawnManagement\FormRedemptionInterestYearlySummary.cs" />
+    <Compile Include="PawnManagement\FormNumberOfPledgeBillsConsolidated.cs" />
+    <Compile Include="PawnManagement\FormAutoBackUp.cs" />
+    <Compile Include="PawnManagement\FormBankMaster.cs" />
+    <Compile Include="PawnManagement\FormAddCustomer.cs" />
+    <Compile Include="PawnManagement\FormArticles.cs" />
+    <Compile Include="PawnManagement\Extension.cs" />
+    <Compile Include="PawnManagement\ConvertNumbersToWords.cs" />
+    <Compile Include="PawnManagement\FormBankPledgee.cs" />
+    <Compile Include="PawnManagement\FormBankRedemption.cs" />
+    <Compile Include="PawnManagement\FormBankReports.cs" />
+    <Compile Include="PawnManagement\FormCall.cs" />
+    <Compile Include="PawnManagement\FormCashBook.cs" />
+    <Compile Include="PawnManagement\FormChangeRokadDate.cs" />
+    <Compile Include="PawnManagement\FormCrystalReportViewer.cs" />
+    <Compile Include="PawnManagement\FormCustomerNotComing.cs" />
+    <Compile Include="PawnManagement\FormCustomerRegualrNotComing.cs" />
+    <Compile Include="PawnManagement\FormCustomerReminder.cs" />
+    <Compile Include="PawnManagement\FormCustomerStreetReport.cs" />
+    <Compile Include="PawnManagement\FormD3.cs" />
+    <Compile Include="PawnManagement\FormDashBoard.cs" />
+    <Compile Include="PawnManagement\FormException.cs" />
+    <Compile Include="PawnManagement\FormHistory.cs" />
+    <Compile Include="PawnManagement\FormHistoryReminderSettings.cs" />
+    <Compile Include="PawnManagement\FormJewelPhoto.cs" />
+    <Compile Include="PawnManagement\FormJewelsOutside.cs" />
+    <Compile Include="PawnManagement\FormKhaatho.cs" />
+    <Compile Include="PawnManagement\FormKhaathoReport.cs" />
+    <Compile Include="PawnManagement\FormNewRokadDateSelect.cs" />
+    <Compile Include="PawnManagement\FormNumberOfPledgeBills.cs" />
+    <Compile Include="PawnManagement\FormNumberOfRedemptionBills.cs" />
+    <Compile Include="PawnManagement\FormPledgeAmountSummaryYearly.cs" />
+    <Compile Include="PawnManagement\FormPledgeAndRedemptionSeries.cs" />
+    <Compile Include="PawnManagement\FormPledgeInLoss.cs" />
+    <Compile Include="PawnManagement\FormPledgeReports.cs" />
+    <Compile Include="PawnManagement\FormRedemptionINTEREST16MonthlySummary.cs" />
+    <Compile Include="PawnManagement\FormRedemptionReports.cs" />
+    <Compile Include="PawnManagement\FormReminder.cs" />
+    <Compile Include="PawnManagement\FormRokad.cs" />
+    <Compile Include="PawnManagement\FormRokadAutoDelete.cs" />
+    <Compile Include="PawnManagement\FormRokadDateSelect.cs" />
+    <Compile Include="PawnManagement\FormRokadReports.cs" />
+    <Compile Include="PawnManagement\FormSendSMS.cs" />
+    <Compile Include="PawnManagement\FormSmsMessages.cs" />
+    <Compile Include="PawnManagement\FormViewCustomerDetailss.cs" />
+    <Compile Include="PawnManagement\FormViewSentMessages.cs" />
+    <Compile Include="PawnManagement\FormVoucher.cs" />
+    <Compile Include="PawnManagement\FormVoucherMaster.cs" />
+    <Compile Include="PawnManagement\formLicenseChecker.cs" />
+    <Compile Include="PawnManagement\pawnmanagementDataSet1.cs" />
+    <Compile Include="PawnManagement\FormEditCustomer.cs" />
+    <Compile Include="PawnManagement\ExportToExcel.cs" />
+    <Compile Include="PawnManagement\FormDuplicateBill.cs" />
+    <Compile Include="PawnManagement\FormGramRate.cs" />
+    <Compile Include="PawnManagement\FormInterest.cs" />
+    <Compile Include="PawnManagement\FormLedger.cs" />
+    <Compile Include="PawnManagement\FormLoading.cs" />
+    <Compile Include="PawnManagement\FormCamera.cs" />
+    <Compile Include="PawnManagement\Form_Login_Details.cs" />
+    <Compile Include="PawnManagement\FormLocation.cs" />
+    <Compile Include="PawnManagement\FormLoginOld.cs" />
+    <Compile Include="PawnManagement\FormMain.cs" />
+    <Compile Include="PawnManagement\PawnManagementClass.cs" />
+    <Compile Include="PawnManagement\Formphoto.cs" />
+    <Compile Include="PawnManagement\Program.cs" />
+    <Compile Include="PawnManagement\FormRedemption.cs" />
+    <Compile Include="PawnManagement\FormSearchCustomer.cs" />
+    <Compile Include="PawnManagement\FormMenuSettings.cs" />
+    <Compile Include="PawnManagement\ReportCustomerLabels1.cs" />
+    <Compile Include="PawnManagement\CachedReportCustomerLabels1.cs" />
+    <Compile Include="PawnManagement\SQLHelper.cs" />
+    <Compile Include="PawnManagement\FormToken.cs" />
+    <Compile Include="PawnManagement\WaitWindow.cs" />
+    <Compile Include="PawnManagement\WaitWindowEventArgs.cs" />
+    <Compile Include="PawnManagement\WaitWindowGUI.cs" />
+    <Compile Include="PawnManagement\FormPledgePledge.cs" />
+    <Compile Include="PawnManagement\Testing\Form10.cs" />
+    <Compile Include="PawnManagement\Testing\Form11.cs" />
+    <Compile Include="PawnManagement\Testing\FormCreateXmlSchema.cs" />
+    <Compile Include="PawnManagement\Testing\Form8.cs" />
+    <Compile Include="PawnManagement\Testing\Form9.cs" />
+    <Compile Include="PawnManagement\Testing\Form6.cs" />
+    <Compile Include="PawnManagement\Testing\Form7.cs" />
+    <Compile Include="PawnManagement\Testing\FormAuctionRedemption.cs" />
+    <Compile Include="PawnManagement\Testing\FormEmail.cs" />
+    <Compile Include="PawnManagement\Testing\FormUpdateDtabase.cs" />
+    <Compile Include="PawnManagement\Testing\FormStockCheck.cs" />
+    <Compile Include="PawnManagement\a\FormPledgePledge.cs" />
+    <Compile Include="PawnManagement\Testing2\Form2.cs" />
+    <Compile Include="PawnManagement\Reports\ReportDayReport1.cs" />
+    <Compile Include="PawnManagement\Reports\CachedReportDayReport1.cs" />
+    <Compile Include="PawnManagement\Properties\Resources.cs" />
+    <Compile Include="PawnManagement\Properties\Settings.cs" />
+    <Compile Include="PawnManagement\pawnmanagementDataSet1TableAdapters\Paste_ErrorsTableAdapter.cs" />
+    <Compile Include="PawnManagement\pawnmanagementDataSet1TableAdapters\tblArticlesTableAdapter.cs" />
+    <Compile Include="PawnManagement\pawnmanagementDataSet1TableAdapters\tblArticlesDescriptionTableAdapter.cs" />
+    <Compile Include="PawnManagement\pawnmanagementDataSet1TableAdapters\tblArticlesSettingsTableAdapter.cs" />
+    <Compile Include="PawnManagement\pawnmanagementDataSet1TableAdapters\tblAutoDeleteRokadTableAdapter.cs" />
+    <Compile Include="PawnManagement\pawnmanagementDataSet1TableAdapters\tblBackUpTableAdapter.cs" />
+    <Compile Include="PawnManagement\pawnmanagementDataSet1TableAdapters\tblBankMasterTableAdapter.cs" />
+    <Compile Include="PawnManagement\pawnmanagementDataSet1TableAdapters\tblBankPledgeTableAdapter.cs" />
+    <Compile Include="PawnManagement\pawnmanagementDataSet1TableAdapters\tblBankPledgePledgeBillsTableAdapter.cs" />
+    <Compile Include="PawnManagement\pawnmanagementDataSet1TableAdapters\tblBillerTableAdapter.cs" />
+    <Compile Include="PawnManagement\pawnmanagementDataSet1TableAdapters\tblColoursTableAdapter.cs" />
+    <Compile Include="PawnManagement\pawnmanagementDataSet1TableAdapters\tblCompanyDetailsTableAdapter.cs" />
+    <Compile Include="PawnManagement\pawnmanagementDataSet1TableAdapters\tblCustomersTableAdapter.cs" />
+    <Compile Include="PawnManagement\pawnmanagementDataSet1TableAdapters\tblDatesTableAdapter.cs" />
+    <Compile Include="PawnManagement\pawnmanagementDataSet1TableAdapters\tblExceptionsTableAdapter.cs" />
+    <Compile Include="PawnManagement\pawnmanagementDataSet1TableAdapters\tblGramRateTableAdapter.cs" />
+    <Compile Include="PawnManagement\pawnmanagementDataSet1TableAdapters\tblHistoryTableAdapter.cs" />
+    <Compile Include="PawnManagement\pawnmanagementDataSet1TableAdapters\tblhistoryReminderTableAdapter.cs" />
+    <Compile Include="PawnManagement\pawnmanagementDataSet1TableAdapters\TBLIMAGETableAdapter.cs" />
+    <Compile Include="PawnManagement\pawnmanagementDataSet1TableAdapters\tblInterestTableAdapter.cs" />
+    <Compile Include="PawnManagement\pawnmanagementDataSet1TableAdapters\tblInterestDummyTableAdapter.cs" />
+    <Compile Include="PawnManagement\pawnmanagementDataSet1TableAdapters\tblInterestReceivedTableAdapter.cs" />
+    <Compile Include="PawnManagement\pawnmanagementDataSet1TableAdapters\tblInterestSettingTableAdapter.cs" />
+    <Compile Include="PawnManagement\pawnmanagementDataSet1TableAdapters\tblKhaathoTableAdapter.cs" />
+    <Compile Include="PawnManagement\pawnmanagementDataSet1TableAdapters\tblLedgerrTableAdapter.cs" />
+    <Compile Include="PawnManagement\pawnmanagementDataSet1TableAdapters\tblLoginTableAdapter.cs" />
+    <Compile Include="PawnManagement\pawnmanagementDataSet1TableAdapters\tblMemberTypeTableAdapter.cs" />
+    <Compile Include="PawnManagement\pawnmanagementDataSet1TableAdapters\tblMenuSettingsTableAdapter.cs" />
+    <Compile Include="PawnManagement\pawnmanagementDataSet1TableAdapters\tblMessageTableAdapter.cs" />
+    <Compile Include="PawnManagement\pawnmanagementDataSet1TableAdapters\tblmonitorTableAdapter.cs" />
+    <Compile Include="PawnManagement\pawnmanagementDataSet1TableAdapters\tblOrderTableAdapter.cs" />
+    <Compile Include="PawnManagement\pawnmanagementDataSet1TableAdapters\tblPincodeTableAdapter.cs" />
+    <Compile Include="PawnManagement\pawnmanagementDataSet1TableAdapters\tblPledgeTableAdapter.cs" />
+    <Compile Include="PawnManagement\pawnmanagementDataSet1TableAdapters\tblPledgeArticlesTableAdapter.cs" />
+    <Compile Include="PawnManagement\pawnmanagementDataSet1TableAdapters\tblPledgeArticlesCombinedTableAdapter.cs" />
+    <Compile Include="PawnManagement\pawnmanagementDataSet1TableAdapters\tblPledgeBillNumberSeriesTableAdapter.cs" />
+    <Compile Include="PawnManagement\pawnmanagementDataSet1TableAdapters\tblPledgePrintSettingsTableAdapter.cs" />
+    <Compile Include="PawnManagement\pawnmanagementDataSet1TableAdapters\tblPrintSettingsTableAdapter.cs" />
+    <Compile Include="PawnManagement\pawnmanagementDataSet1TableAdapters\tblRedemptionTableAdapter.cs" />
+    <Compile Include="PawnManagement\pawnmanagementDataSet1TableAdapters\tblRedemptionPrintSettingsTableAdapter.cs" />
+    <Compile Include="PawnManagement\pawnmanagementDataSet1TableAdapters\tblReminderTableAdapter.cs" />
+    <Compile Include="PawnManagement\pawnmanagementDataSet1TableAdapters\tblRokadDetailsTableAdapter.cs" />
+    <Compile Include="PawnManagement\pawnmanagementDataSet1TableAdapters\tblSentSmsTableAdapter.cs" />
+    <Compile Include="PawnManagement\pawnmanagementDataSet1TableAdapters\tblSettingsTableAdapter.cs" />
+    <Compile Include="PawnManagement\pawnmanagementDataSet1TableAdapters\tblShopDetailsTableAdapter.cs" />
+    <Compile Include="PawnManagement\pawnmanagementDataSet1TableAdapters\tbltable1TableAdapter.cs" />
+    <Compile Include="PawnManagement\pawnmanagementDataSet1TableAdapters\tblUdhrathTableAdapter.cs" />
+    <Compile Include="PawnManagement\pawnmanagementDataSet1TableAdapters\tblVersionTableAdapter.cs" />
+    <Compile Include="PawnManagement\pawnmanagementDataSet1TableAdapters\tblVoucherMasterTableAdapter.cs" />
+    <Compile Include="PawnManagement\pawnmanagementDataSet1TableAdapters\tblVouchersTableAdapter.cs" />
+    <Compile Include="PawnManagement\pawnmanagementDataSet1TableAdapters\tblRateTableAdapter.cs" />
+    <Compile Include="PawnManagement\pawnmanagementDataSet1TableAdapters\tblItemNamesTableAdapter.cs" />
+    <Compile Include="PawnManagement\pawnmanagementDataSet1TableAdapters\Paste_Errors1TableAdapter.cs" />
+    <Compile Include="PawnManagement\pawnmanagementDataSet1TableAdapters\tblItemTypeTableAdapter.cs" />
+    <Compile Include="PawnManagement\pawnmanagementDataSet1TableAdapters\tblPurchaseTableAdapter.cs" />
+    <Compile Include="PawnManagement\pawnmanagementDataSet1TableAdapters\tblSalesTableAdapter.cs" />
+    <Compile Include="PawnManagement\pawnmanagementDataSet1TableAdapters\tblInterestCalculationSettingsTableAdapter.cs" />
+    <Compile Include="PawnManagement\pawnmanagementDataSet1TableAdapters\tblLicenseDetailsTableAdapter.cs" />
+    <Compile Include="PawnManagement\pawnmanagementDataSet1TableAdapters\tblMetalMasterTableAdapter.cs" />
+    <Compile Include="PawnManagement\pawnmanagementDataSet1TableAdapters\tblPurityMasterTableAdapter.cs" />
+    <Compile Include="PawnManagement\pawnmanagementDataSet1TableAdapters\Paste_Errors2TableAdapter.cs" />
+    <Compile Include="PawnManagement\pawnmanagementDataSet1TableAdapters\tblArticlesJewelleryTableAdapter.cs" />
+    <Compile Include="PawnManagement\pawnmanagementDataSet1TableAdapters\tblBoxTableAdapter.cs" />
+    <Compile Include="PawnManagement\pawnmanagementDataSet1TableAdapters\tblDenominationTableAdapter.cs" />
+    <Compile Include="PawnManagement\pawnmanagementDataSet1TableAdapters\tblFinancialYearsTableAdapter.cs" />
+    <Compile Include="PawnManagement\pawnmanagementDataSet1TableAdapters\tblOldPurchaseTableAdapter.cs" />
+    <Compile Include="PawnManagement\pawnmanagementDataSet1TableAdapters\tblOpeningStockTableAdapter.cs" />
+    <Compile Include="PawnManagement\pawnmanagementDataSet1TableAdapters\tblPaymentsTableAdapter.cs" />
+    <Compile Include="PawnManagement\pawnmanagementDataSet1TableAdapters\tblSalesDetailsTableAdapter.cs" />
+    <Compile Include="PawnManagement\pawnmanagementDataSet1TableAdapters\tblStockTableAdapter.cs" />
+    <Compile Include="PawnManagement\pawnmanagementDataSet1TableAdapters\Paste_Errors3TableAdapter.cs" />
+    <Compile Include="PawnManagement\pawnmanagementDataSet1TableAdapters\Paste_Errors4TableAdapter.cs" />
+    <Compile Include="PawnManagement\pawnmanagementDataSet1TableAdapters\Paste_Errors5TableAdapter.cs" />
+    <Compile Include="PawnManagement\pawnmanagementDataSet1TableAdapters\tblBillNumberSettingsTableAdapter.cs" />
+    <Compile Include="PawnManagement\pawnmanagementDataSet1TableAdapters\Paste_Errors6TableAdapter.cs" />
+    <Compile Include="PawnManagement\pawnmanagementDataSet1TableAdapters\Paste_Errors7TableAdapter.cs" />
+    <Compile Include="PawnManagement\pawnmanagementDataSet1TableAdapters\tblBankDetailsTableAdapter.cs" />
+    <Compile Include="PawnManagement\pawnmanagementDataSet1TableAdapters\TableAdapterManager.cs" />
+    <Compile Include="PawnManagement\JewelleryForms\FormBillNumberSetting.cs" />
+    <Compile Include="PawnManagement\JewelleryForms\FormCompanyDetails.cs" />
+    <Compile Include="PawnManagement\JewelleryForms\FormDuplicateBill.cs" />
+    <Compile Include="PawnManagement\JewelleryForms\FormItemNamesAddEdit.cs" />
+    <Compile Include="PawnManagement\JewelleryForms\FormItemNamesMaster.cs" />
+    <Compile Include="PawnManagement\JewelleryForms\FormItemTypeMaster.cs" />
+    <Compile Include="PawnManagement\JewelleryForms\FormItemTypesAddEdit.cs" />
+    <Compile Include="PawnManagement\JewelleryForms\FormMetalMaster.cs" />
+    <Compile Include="PawnManagement\JewelleryForms\FormMetalMasterAddEdit.cs" />
+    <Compile Include="PawnManagement\JewelleryForms\FormNewSales.cs" />
+    <Compile Include="PawnManagement\JewelleryForms\FormOldPurchase.cs" />
+    <Compile Include="PawnManagement\JewelleryForms\FormPurityAddEdit.cs" />
+    <Compile Include="PawnManagement\JewelleryForms\FormPurityMaster.cs" />
+    <Compile Include="PawnManagement\JewelleryForms\FormRate.cs" />
+    <Compile Include="PawnManagement\JewelleryForms\FormRateAddEdit.cs" />
+    <Compile Include="PawnManagement\JewelleryForms\FormSalesReport.cs" />
+    <Compile Include="PawnManagement\JewelleryForms\FormSettings.cs" />
+    <Compile Include="PawnManagement\JewelleryForms\FormTesting.cs" />
+    <Compile Include="PawnManagement\Forms\FormDayReportCustomerWise.cs" />
+    <Compile Include="PawnManagement\Forms\FormAdminPassword.cs" />
+    <Compile Include="PawnManagement\Forms\FormAdminTools.cs" />
+    <Compile Include="PawnManagement\Forms\FormBiller.cs" />
+    <Compile Include="PawnManagement\Forms\FormBillerAddEDit.cs" />
+    <Compile Include="PawnManagement\Forms\FormChangeInterestFromDecruption.cs" />
+    <Compile Include="PawnManagement\Forms\FormChangeShopCode.cs" />
+    <Compile Include="PawnManagement\Forms\FormColumnOrder.cs" />
+    <Compile Include="PawnManagement\Forms\FormCustomerNew.cs" />
+    <Compile Include="PawnManagement\Forms\FormCustomerPending.cs" />
+    <Compile Include="PawnManagement\Forms\FormCustomerPendingGirviList.cs" />
+    <Compile Include="PawnManagement\Forms\FormCustomersWithDuplicatePhoneNumbers.cs" />
+    <Compile Include="PawnManagement\Forms\FormDayReport.cs" />
+    <Compile Include="PawnManagement\Forms\FormArticlesSetting.cs" />
+    <Compile Include="PawnManagement\Forms\FormBillNumberSeriesSettings.cs" />
+    <Compile Include="PawnManagement\Forms\FormChangeOpeningBalancee.cs" />
+    <Compile Include="PawnManagement\Forms\FormDeleteCustomer.cs" />
+    <Compile Include="PawnManagement\Forms\FormDeletePledge.cs" />
+    <Compile Include="PawnManagement\Forms\FormDeleteRedemptionTill.cs" />
+    <Compile Include="PawnManagement\Forms\FormDuplicateRedemptionBill.cs" />
+    <Compile Include="PawnManagement\Forms\FormEditVoucher.cs" />
+    <Compile Include="PawnManagement\Forms\FormErrorFinder.cs" />
+    <Compile Include="PawnManagement\Forms\FormErrors.cs" />
+    <Compile Include="PawnManagement\Forms\FormErrorTree.cs" />
+    <Compile Include="PawnManagement\Forms\FormInterestSetting.cs" />
+    <Compile Include="PawnManagement\Forms\FormLicenseInformation.cs" />
+    <Compile Include="PawnManagement\Forms\FormListOfPrinters.cs" />
+    <Compile Include="PawnManagement\Forms\myPrinters.cs" />
+    <Compile Include="PawnManagement\Forms\FormLoginAddEdit.cs" />
+    <Compile Include="PawnManagement\Forms\FormLoginPermission.cs" />
+    <Compile Include="PawnManagement\Forms\FormManageNotice.cs" />
+    <Compile Include="PawnManagement\Forms\FormManageNoticeRecords.cs" />
+    <Compile Include="PawnManagement\Forms\FormMemberTypesAddEdit.cs" />
+    <Compile Include="PawnManagement\Forms\FormMemberTypesMaster.cs" />
+    <Compile Include="PawnManagement\Forms\FormMultipleRelease.cs" />
+    <Compile Include="PawnManagement\Forms\FormNoticeBasedOnPUreWeight.cs" />
+    <Compile Include="PawnManagement\Forms\FormNoticeChargesReport.cs" />
+    <Compile Include="PawnManagement\Forms\FormNumberOfCustomersAdded.cs" />
+    <Compile Include="PawnManagement\Forms\FormPanel1.cs" />
+    <Compile Include="PawnManagement\Forms\FormPasswordChecker.cs" />
+    <Compile Include="PawnManagement\Forms\FormPledgeErorr.cs" />
+    <Compile Include="PawnManagement\Forms\FormPledgeErrorFinder.cs" />
+    <Compile Include="PawnManagement\Forms\FormPledgeInLossBasedOnPureWeighttt.cs" />
+    <Compile Include="PawnManagement\Forms\FormPledgeScreenPendingPledgeColumnOrder.cs" />
+    <Compile Include="PawnManagement\Forms\FormPurityCalculator.cs" />
+    <Compile Include="PawnManagement\Forms\FormReBillMany.cs" />
+    <Compile Include="PawnManagement\Forms\FormRedemptionReportsOrder.cs" />
+    <Compile Include="PawnManagement\Forms\FormPendingGirviTotal.cs" />
+    <Compile Include="PawnManagement\Forms\FormPledgeBill.cs" />
+    <Compile Include="PawnManagement\Forms\FormCreatePureWeight.cs" />
+    <Compile Include="PawnManagement\Forms\FormReBill.cs" />
+    <Compile Include="PawnManagement\Forms\FormReplaceDuplicateAddress.cs" />
+    <Compile Include="PawnManagement\Forms\FormSelectNoticeFromPledgeScreen.cs" />
+    <Compile Include="PawnManagement\Forms\FormSettings.cs" />
+    <Compile Include="PawnManagement\Forms\FormSexSeperator.cs" />
+    <Compile Include="PawnManagement\Forms\FormShopDetailsAddEdit.cs" />
+    <Compile Include="PawnManagement\Forms\FormShopDetailss.cs" />
+    <Compile Include="PawnManagement\Forms\FormStockCheck.cs" />
+    <Compile Include="PawnManagement\Forms\FormStockMaster.cs" />
+    <Compile Include="PawnManagement\Forms\FormTestingDataGridView.cs" />
+    <Compile Include="PawnManagement\Forms\FormUndoRedemption.cs" />
+    <Compile Include="PawnManagement\Forms\FormUpdate.cs" />
+    <Compile Include="PawnManagement\Forms\FormViewCustomerOrder.cs" />
+    <Compile Include="PawnManagement\Forms\FormViewPledgeBill.cs" />
+    <Compile Include="PawnManagement\Forms\FormViewPledgeBillNew.cs" />
+    <Compile Include="PawnManagement\Forms\FormViewRedemption.cs" />
+    <Compile Include="PawnManagement\Forms\FormViewRedemptionBillNew.cs" />
+    <Compile Include="PawnManagement\Forms\FormVoucherAddEdit.cs" />
+    <Compile Include="PawnManagement\Forms\ReportRedemptionBill1.cs" />
+    <Compile Include="PawnManagement\Forms\CachedReportRedemptionBill1.cs" />
+    <Compile Include="PawnManagement\Classes\RedemptionClass.cs" />
+    <Compile Include="PawnManagement\Classes\StringClass.cs" />
+    <Compile Include="PawnManagement\Classes\StringFunctionsClass.cs" />
+    <Compile Include="PawnManagement\Classes\PawnManagementClasses\ArticlesClass.cs" />
+    <Compile Include="PawnManagement\Classes\PawnManagementClasses\BankPledgeClass.cs" />
+    <Compile Include="PawnManagement\Classes\PawnManagementClasses\BankPledgePledgeBillsClass.cs" />
+    <Compile Include="PawnManagement\Classes\PawnManagementClasses\BillerClass.cs" />
+    <Compile Include="PawnManagement\Classes\PawnManagementClasses\CustomersClass.cs" />
+    <Compile Include="PawnManagement\Classes\PawnManagementClasses\FingerPrintClass.cs" />
+    <Compile Include="PawnManagement\Classes\PawnManagementClasses\GramRateClass.cs" />
+    <Compile Include="PawnManagement\Classes\PawnManagementClasses\LedgerMaster.cs" />
+    <Compile Include="PawnManagement\Classes\PawnManagementClasses\LocationAndPincodeClass.cs" />
+    <Compile Include="PawnManagement\Classes\PawnManagementClasses\LoginClass.cs" />
+    <Compile Include="PawnManagement\Classes\PawnManagementClasses\LoginPermissionClass.cs" />
+    <Compile Include="PawnManagement\Classes\PawnManagementClasses\MemberTypesMasterClass.cs" />
+    <Compile Include="PawnManagement\Classes\PawnManagementClasses\MenuSettingsClass.cs" />
+    <Compile Include="PawnManagement\Classes\PawnManagementClasses\OrderClass.cs" />
+    <Compile Include="PawnManagement\Classes\PawnManagementClasses\PledgeBillNumberSeriesClass.cs" />
+    <Compile Include="PawnManagement\Classes\PawnManagementClasses\PledgeClass.cs" />
+    <Compile Include="PawnManagement\Classes\PawnManagementClasses\RedemptionClass.cs" />
+    <Compile Include="PawnManagement\Classes\PawnManagementClasses\RokadDetailsClass.cs" />
+    <Compile Include="PawnManagement\Classes\PawnManagementClasses\SettingsClass.cs" />
+    <Compile Include="PawnManagement\Classes\PawnManagementClasses\VoucherClass.cs" />
+    <Compile Include="PawnManagement\Classes\PawnManagementClasses\VoucherMasterClass.cs" />
+    <Compile Include="PawnManagement\Classes\JewelleryClasses\ArticlesMasterClass.cs" />
+    <Compile Include="PawnManagement\Classes\JewelleryClasses\BillNumberSeriesClass.cs" />
+    <Compile Include="PawnManagement\Classes\JewelleryClasses\BoxClass.cs" />
+    <Compile Include="PawnManagement\Classes\JewelleryClasses\DenominationClass.cs" />
+    <Compile Include="PawnManagement\Classes\JewelleryClasses\FinancialYearsClass.cs" />
+    <Compile Include="PawnManagement\Classes\JewelleryClasses\ItemNamesMasterClass.cs" />
+    <Compile Include="PawnManagement\Classes\JewelleryClasses\ItemTypesClass.cs" />
+    <Compile Include="PawnManagement\Classes\JewelleryClasses\JewellerySettingsClass.cs" />
+    <Compile Include="PawnManagement\Classes\JewelleryClasses\MetalMaster.cs" />
+    <Compile Include="PawnManagement\Classes\JewelleryClasses\OldPurchaseClass.cs" />
+    <Compile Include="PawnManagement\Classes\JewelleryClasses\OpeningStockClass.cs" />
+    <Compile Include="PawnManagement\Classes\JewelleryClasses\PaymentsClass.cs" />
+    <Compile Include="PawnManagement\Classes\JewelleryClasses\PurchaseClass.cs" />
+    <Compile Include="PawnManagement\Classes\JewelleryClasses\PurityMasterClass.cs" />
+    <Compile Include="PawnManagement\Classes\JewelleryClasses\RateClass.cs" />
+    <Compile Include="PawnManagement\Classes\JewelleryClasses\SalesClass.cs" />
+    <Compile Include="PawnManagement\Classes\JewelleryClasses\SalesDetailsClass.cs" />
+    <Compile Include="PawnManagement\Classes\JewelleryClasses\StockClass.cs" />
+    <Compile Include="PawnManagement\Classes\Chit\ChitMasterclass.cs" />
+    <Compile Include="PawnManagement\Chit\FormChitAddEdit.cs" />
+    <Compile Include="PawnManagement\Chit\FormChitMaster.cs" />
+    <Compile Include="WIA\CommonDialog.cs" />
+    <Compile Include="WIA\Device.cs" />
+    <Compile Include="WIA\DeviceInfo.cs" />
+    <Compile Include="WIA\DeviceInfos.cs" />
+    <Compile Include="WIA\DeviceManager.cs" />
+    <Compile Include="WIA\ICommonDialog.cs" />
+    <Compile Include="WIA\IDevice.cs" />
+    <Compile Include="WIA\IDeviceInfo.cs" />
+    <Compile Include="WIA\IDeviceInfos.cs" />
+    <Compile Include="WIA\IDeviceManager.cs" />
+    <Compile Include="WIA\IImageFile.cs" />
+    <Compile Include="WIA\IItem.cs" />
+    <Compile Include="WIA\IItems.cs" />
+    <Compile Include="WIA\IProperties.cs" />
+    <Compile Include="WIA\IProperty.cs" />
+    <Compile Include="WIA\ImageFile.cs" />
+    <Compile Include="WIA\Item.cs" />
+    <Compile Include="WIA\Items.cs" />
+    <Compile Include="WIA\Properties.cs" />
+    <Compile Include="WIA\Property.cs" />
+    <Compile Include="WIA\WiaDeviceType.cs" />
+    <Compile Include="WIA\_IDeviceManagerEvents.cs" />
+    <Compile Include="WIA\_IDeviceManagerEvents_Event.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ConnectionstringatRuntime\Form1.resx" />
+    <EmbeddedResource Include="PawnManagement\a\FormPledgePledge.resx" />
+    <EmbeddedResource Include="PawnManagement\Chit\FormChitAddEdit.resx" />
+    <EmbeddedResource Include="PawnManagement\Chit\FormChitMaster.resx" />
+    <EmbeddedResource Include="PawnManagement\Form_Login_Details.resx" />
+    <EmbeddedResource Include="PawnManagement\Form1.resx" />
+    <EmbeddedResource Include="PawnManagement\FormAboutBox.resx" />
+    <EmbeddedResource Include="PawnManagement\FormAddCustomer.resx" />
+    <EmbeddedResource Include="PawnManagement\FormArticles.resx" />
+    <EmbeddedResource Include="PawnManagement\FormAuctionReports.resx" />
+    <EmbeddedResource Include="PawnManagement\FormAutoBackUp.resx" />
+    <EmbeddedResource Include="PawnManagement\FormBankMaster.resx" />
+    <EmbeddedResource Include="PawnManagement\FormBankPledgee.resx" />
+    <EmbeddedResource Include="PawnManagement\FormBankRedemption.resx" />
+    <EmbeddedResource Include="PawnManagement\FormBankReports.resx" />
+    <EmbeddedResource Include="PawnManagement\FormCall.resx" />
+    <EmbeddedResource Include="PawnManagement\FormCamera.resx" />
+    <EmbeddedResource Include="PawnManagement\FormCashBook.resx" />
+    <EmbeddedResource Include="PawnManagement\FormChangeInterest.resx" />
+    <EmbeddedResource Include="PawnManagement\FormChangeRokadDate.resx" />
+    <EmbeddedResource Include="PawnManagement\FormChangeToAes.resx" />
+    <EmbeddedResource Include="PawnManagement\FormCompleteSummary.resx" />
+    <EmbeddedResource Include="PawnManagement\FormCrystalReportViewer.resx" />
+    <EmbeddedResource Include="PawnManagement\FormCustomerInterestSummary.resx" />
+    <EmbeddedResource Include="PawnManagement\FormCustomerLocationReport.resx" />
+    <EmbeddedResource Include="PawnManagement\FormCustomerNotComing.resx" />
+    <EmbeddedResource Include="PawnManagement\FormCustomerRegualrNotComing.resx" />
+    <EmbeddedResource Include="PawnManagement\FormCustomerReminder.resx" />
+    <EmbeddedResource Include="PawnManagement\FormCustomerStreetReport.resx" />
+    <EmbeddedResource Include="PawnManagement\FormD3.resx" />
+    <EmbeddedResource Include="PawnManagement\FormDashBoard.resx" />
+    <EmbeddedResource Include="PawnManagement\FormDataGridView.resx" />
+    <EmbeddedResource Include="PawnManagement\FormDeleteDuplicateCustomer.resx" />
+    <EmbeddedResource Include="PawnManagement\FormDeletePledgeTill.resx" />
+    <EmbeddedResource Include="PawnManagement\FormDuplicateBill.resx" />
+    <EmbeddedResource Include="PawnManagement\FormEditCustomer.resx" />
+    <EmbeddedResource Include="PawnManagement\formEncryptionDecryption.resx" />
+    <EmbeddedResource Include="PawnManagement\FormErrorsJewelsReleasedButStillInBank.resx" />
+    <EmbeddedResource Include="PawnManagement\FormException.resx" />
+    <EmbeddedResource Include="PawnManagement\FormGramRate.resx" />
+    <EmbeddedResource Include="PawnManagement\FormHistory.resx" />
+    <EmbeddedResource Include="PawnManagement\FormHistoryReminderSettings.resx" />
+    <EmbeddedResource Include="PawnManagement\FormInactivityMonitor.resx" />
+    <EmbeddedResource Include="PawnManagement\FormInterest.resx" />
+    <EmbeddedResource Include="PawnManagement\FormInterestDummy.resx" />
+    <EmbeddedResource Include="PawnManagement\FormJewelPhoto.resx" />
+    <EmbeddedResource Include="PawnManagement\FormJewelsOutside.resx" />
+    <EmbeddedResource Include="PawnManagement\FormKhaatho.resx" />
+    <EmbeddedResource Include="PawnManagement\FormKhaathoReport.resx" />
+    <EmbeddedResource Include="PawnManagement\FormLedger.resx" />
+    <EmbeddedResource Include="PawnManagement\FormLedgerBook.resx" />
+    <EmbeddedResource Include="PawnManagement\FormLedgerDetails.resx" />
+    <EmbeddedResource Include="PawnManagement\formLicenseChecker.resx" />
+    <EmbeddedResource Include="PawnManagement\FormLoading.resx" />
+    <EmbeddedResource Include="PawnManagement\FormLocation.resx" />
+    <EmbeddedResource Include="PawnManagement\FormLoginOld.resx" />
+    <EmbeddedResource Include="PawnManagement\FormMain.resx" />
+    <EmbeddedResource Include="PawnManagement\FormMenusettin.resx" />
+    <EmbeddedResource Include="PawnManagement\FormMenuSettings.resx" />
+    <EmbeddedResource Include="PawnManagement\FormMoneyCalculator.resx" />
+    <EmbeddedResource Include="PawnManagement\FormNewRokadDateSelect.resx" />
+    <EmbeddedResource Include="PawnManagement\FormNumberOfPledgeBills.resx" />
+    <EmbeddedResource Include="PawnManagement\FormNumberOfPledgeBillsConsolidated.resx" />
+    <EmbeddedResource Include="PawnManagement\FormNumberOfRedemptionBills.resx" />
+    <EmbeddedResource Include="PawnManagement\FormNumberOfRedemptionBillsConsolidated.resx" />
+    <EmbeddedResource Include="PawnManagement\FormPartPayment.resx" />
+    <EmbeddedResource Include="PawnManagement\FormPartPaymentReports.resx" />
+    <EmbeddedResource Include="PawnManagement\FormPaymentDetailsForBillNumber.resx" />
+    <EmbeddedResource Include="PawnManagement\FormPendingInterestReports.resx" />
+    <EmbeddedResource Include="PawnManagement\Formphoto.resx" />
+    <EmbeddedResource Include="PawnManagement\FormPledgeAmountSummary.resx" />
+    <EmbeddedResource Include="PawnManagement\FormPledgeAmountSummaryYearly.resx" />
+    <EmbeddedResource Include="PawnManagement\FormPledgeAndRedemptionSeries.resx" />
+    <EmbeddedResource Include="PawnManagement\FormPledgeInLoss.resx" />
+    <EmbeddedResource Include="PawnManagement\FormPledgeInterest.resx" />
+    <EmbeddedResource Include="PawnManagement\FormPledgePledge.resx" />
+    <EmbeddedResource Include="PawnManagement\FormPledgeReports.resx" />
+    <EmbeddedResource Include="PawnManagement\FormPrintRokad.resx" />
+    <EmbeddedResource Include="PawnManagement\FormPrintSettings.resx" />
+    <EmbeddedResource Include="PawnManagement\FormRedemption.resx" />
+    <EmbeddedResource Include="PawnManagement\FormRedemptionINTEREST16MonthlySummary.resx" />
+    <EmbeddedResource Include="PawnManagement\FormRedemptionINTEREST16YearlySummary.resx" />
+    <EmbeddedResource Include="PawnManagement\FormRedemptionInterestMonthlySummary.resx" />
+    <EmbeddedResource Include="PawnManagement\FormRedemptionInterestYearlySummary.resx" />
+    <EmbeddedResource Include="PawnManagement\FormRedemptionReports.resx" />
+    <EmbeddedResource Include="PawnManagement\FormReminder.resx" />
+    <EmbeddedResource Include="PawnManagement\FormRokad.resx" />
+    <EmbeddedResource Include="PawnManagement\FormRokadAutoDelete.resx" />
+    <EmbeddedResource Include="PawnManagement\FormRokadDateSelect.resx" />
+    <EmbeddedResource Include="PawnManagement\FormRokadReports.resx" />
+    <EmbeddedResource Include="PawnManagement\FormRokadReportsConsolidated.resx" />
+    <EmbeddedResource Include="PawnManagement\Forms\FormAdminPassword.resx" />
+    <EmbeddedResource Include="PawnManagement\Forms\FormAdminTools.resx" />
+    <EmbeddedResource Include="PawnManagement\Forms\FormArticlesSetting.resx" />
+    <EmbeddedResource Include="PawnManagement\Forms\FormBiller.resx" />
+    <EmbeddedResource Include="PawnManagement\Forms\FormBillerAddEDit.resx" />
+    <EmbeddedResource Include="PawnManagement\Forms\FormBillNumberSeriesSettings.resx" />
+    <EmbeddedResource Include="PawnManagement\Forms\FormChangeInterestFromDecruption.resx" />
+    <EmbeddedResource Include="PawnManagement\Forms\FormChangeOpeningBalancee.resx" />
+    <EmbeddedResource Include="PawnManagement\Forms\FormChangeShopCode.resx" />
+    <EmbeddedResource Include="PawnManagement\Forms\FormColumnOrder.resx" />
+    <EmbeddedResource Include="PawnManagement\Forms\FormCreatePureWeight.resx" />
+    <EmbeddedResource Include="PawnManagement\Forms\FormCustomerNew.resx" />
+    <EmbeddedResource Include="PawnManagement\Forms\FormCustomerPending.resx" />
+    <EmbeddedResource Include="PawnManagement\Forms\FormCustomerPendingGirviList.resx" />
+    <EmbeddedResource Include="PawnManagement\Forms\FormCustomersWithDuplicatePhoneNumbers.resx" />
+    <EmbeddedResource Include="PawnManagement\Forms\FormDayReport.resx" />
+    <EmbeddedResource Include="PawnManagement\Forms\FormDayReportCustomerWise.resx" />
+    <EmbeddedResource Include="PawnManagement\Forms\FormDeleteCustomer.resx" />
+    <EmbeddedResource Include="PawnManagement\Forms\FormDeletePledge.resx" />
+    <EmbeddedResource Include="PawnManagement\Forms\FormDeleteRedemptionTill.resx" />
+    <EmbeddedResource Include="PawnManagement\Forms\FormDuplicateRedemptionBill.resx" />
+    <EmbeddedResource Include="PawnManagement\Forms\FormEditVoucher.resx" />
+    <EmbeddedResource Include="PawnManagement\Forms\FormErrorFinder.resx" />
+    <EmbeddedResource Include="PawnManagement\Forms\FormErrors.resx" />
+    <EmbeddedResource Include="PawnManagement\Forms\FormErrorTree.resx" />
+    <EmbeddedResource Include="PawnManagement\Forms\FormInterestSetting.resx" />
+    <EmbeddedResource Include="PawnManagement\Forms\FormLicenseInformation.resx" />
+    <EmbeddedResource Include="PawnManagement\Forms\FormListOfPrinters.resx" />
+    <EmbeddedResource Include="PawnManagement\Forms\FormLoginAddEdit.resx" />
+    <EmbeddedResource Include="PawnManagement\Forms\FormLoginPermission.resx" />
+    <EmbeddedResource Include="PawnManagement\Forms\FormManageNotice.resx" />
+    <EmbeddedResource Include="PawnManagement\Forms\FormManageNoticeRecords.resx" />
+    <EmbeddedResource Include="PawnManagement\Forms\FormMemberTypesAddEdit.resx" />
+    <EmbeddedResource Include="PawnManagement\Forms\FormMemberTypesMaster.resx" />
+    <EmbeddedResource Include="PawnManagement\Forms\FormMultipleRelease.resx" />
+    <EmbeddedResource Include="PawnManagement\Forms\FormNoticeBasedOnPUreWeight.resx" />
+    <EmbeddedResource Include="PawnManagement\Forms\FormNoticeChargesReport.resx" />
+    <EmbeddedResource Include="PawnManagement\Forms\FormNumberOfCustomersAdded.resx" />
+    <EmbeddedResource Include="PawnManagement\Forms\FormPanel1.resx" />
+    <EmbeddedResource Include="PawnManagement\Forms\FormPasswordChecker.resx" />
+    <EmbeddedResource Include="PawnManagement\Forms\FormPendingGirviTotal.resx" />
+    <EmbeddedResource Include="PawnManagement\Forms\FormPledgeBill.resx" />
+    <EmbeddedResource Include="PawnManagement\Forms\FormPledgeErorr.resx" />
+    <EmbeddedResource Include="PawnManagement\Forms\FormPledgeInLossBasedOnPureWeighttt.resx" />
+    <EmbeddedResource Include="PawnManagement\Forms\FormPledgeScreenPendingPledgeColumnOrder.resx" />
+    <EmbeddedResource Include="PawnManagement\Forms\FormPurityCalculator.resx" />
+    <EmbeddedResource Include="PawnManagement\Forms\FormReBill.resx" />
+    <EmbeddedResource Include="PawnManagement\Forms\FormReBillMany.resx" />
+    <EmbeddedResource Include="PawnManagement\Forms\FormRedemptionReportsOrder.resx" />
+    <EmbeddedResource Include="PawnManagement\Forms\FormReplaceDuplicateAddress.resx" />
+    <EmbeddedResource Include="PawnManagement\Forms\FormSelectNoticeFromPledgeScreen.resx" />
+    <EmbeddedResource Include="PawnManagement\Forms\FormSettings.resx" />
+    <EmbeddedResource Include="PawnManagement\Forms\FormSexSeperator.resx" />
+    <EmbeddedResource Include="PawnManagement\Forms\FormShopDetailsAddEdit.resx" />
+    <EmbeddedResource Include="PawnManagement\Forms\FormShopDetailss.resx" />
+    <EmbeddedResource Include="PawnManagement\Forms\FormStockCheck.resx" />
+    <EmbeddedResource Include="PawnManagement\Forms\FormStockMaster.resx" />
+    <EmbeddedResource Include="PawnManagement\Forms\FormTestingDataGridView.resx" />
+    <EmbeddedResource Include="PawnManagement\Forms\FormUndoRedemption.resx" />
+    <EmbeddedResource Include="PawnManagement\Forms\FormUpdate.resx" />
+    <EmbeddedResource Include="PawnManagement\Forms\FormViewCustomerOrder.resx" />
+    <EmbeddedResource Include="PawnManagement\Forms\FormViewPledgeBill.resx" />
+    <EmbeddedResource Include="PawnManagement\Forms\FormViewPledgeBillNew.resx" />
+    <EmbeddedResource Include="PawnManagement\Forms\FormViewRedemption.resx" />
+    <EmbeddedResource Include="PawnManagement\Forms\FormViewRedemptionBillNew.resx" />
+    <EmbeddedResource Include="PawnManagement\Forms\FormVoucherAddEdit.resx" />
+    <EmbeddedResource Include="PawnManagement\Forms\ReportRedemptionBill1.rpt" />
+    <EmbeddedResource Include="PawnManagement\FormSearchCustomer.resx" />
+    <EmbeddedResource Include="PawnManagement\FormSendSMS.resx" />
+    <EmbeddedResource Include="PawnManagement\FormSmsMessages.resx" />
+    <EmbeddedResource Include="PawnManagement\FormToken.resx" />
+    <EmbeddedResource Include="PawnManagement\FormViewCustomerDetails.resx" />
+    <EmbeddedResource Include="PawnManagement\FormViewCustomerDetailss.resx" />
+    <EmbeddedResource Include="PawnManagement\FormViewSentMessages.resx" />
+    <EmbeddedResource Include="PawnManagement\FormVoucher.resx" />
+    <EmbeddedResource Include="PawnManagement\FormVoucherMaster.resx" />
+    <EmbeddedResource Include="PawnManagement\JewelleryForms\FormBillNumberSetting.resx" />
+    <EmbeddedResource Include="PawnManagement\JewelleryForms\FormCompanyDetails.resx" />
+    <EmbeddedResource Include="PawnManagement\JewelleryForms\FormDuplicateBill.resx" />
+    <EmbeddedResource Include="PawnManagement\JewelleryForms\FormItemNamesAddEdit.resx" />
+    <EmbeddedResource Include="PawnManagement\JewelleryForms\FormItemNamesMaster.resx" />
+    <EmbeddedResource Include="PawnManagement\JewelleryForms\FormItemTypeMaster.resx" />
+    <EmbeddedResource Include="PawnManagement\JewelleryForms\FormItemTypesAddEdit.resx" />
+    <EmbeddedResource Include="PawnManagement\JewelleryForms\FormMetalMaster.resx" />
+    <EmbeddedResource Include="PawnManagement\JewelleryForms\FormMetalMasterAddEdit.resx" />
+    <EmbeddedResource Include="PawnManagement\JewelleryForms\FormNewSales.resx" />
+    <EmbeddedResource Include="PawnManagement\JewelleryForms\FormOldPurchase.resx" />
+    <EmbeddedResource Include="PawnManagement\JewelleryForms\FormPurityAddEdit.resx" />
+    <EmbeddedResource Include="PawnManagement\JewelleryForms\FormPurityMaster.resx" />
+    <EmbeddedResource Include="PawnManagement\JewelleryForms\FormRate.resx" />
+    <EmbeddedResource Include="PawnManagement\JewelleryForms\FormRateAddEdit.resx" />
+    <EmbeddedResource Include="PawnManagement\JewelleryForms\FormSalesReport.resx" />
+    <EmbeddedResource Include="PawnManagement\JewelleryForms\FormSettings.resx" />
+    <EmbeddedResource Include="PawnManagement\JewelleryForms\FormTesting.resx" />
+    <EmbeddedResource Include="PawnManagement\Properties\Resources.resx" />
+    <EmbeddedResource Include="PawnManagement\ReportCustomerLabels1.rpt" />
+    <EmbeddedResource Include="PawnManagement\Reports\ReportDayReport1.rpt" />
+    <EmbeddedResource Include="PawnManagement\Testing\Form10.resx" />
+    <EmbeddedResource Include="PawnManagement\Testing\Form11.resx" />
+    <EmbeddedResource Include="PawnManagement\Testing\Form6.resx" />
+    <EmbeddedResource Include="PawnManagement\Testing\Form7.resx" />
+    <EmbeddedResource Include="PawnManagement\Testing\Form8.resx" />
+    <EmbeddedResource Include="PawnManagement\Testing\Form9.resx" />
+    <EmbeddedResource Include="PawnManagement\Testing\FormAuctionRedemption.resx" />
+    <EmbeddedResource Include="PawnManagement\Testing\FormCreateXmlSchema.resx" />
+    <EmbeddedResource Include="PawnManagement\Testing\FormEmail.resx" />
+    <EmbeddedResource Include="PawnManagement\Testing\FormStockCheck.resx" />
+    <EmbeddedResource Include="PawnManagement\Testing\FormUpdateDtabase.resx" />
+    <EmbeddedResource Include="PawnManagement\Testing2\Form2.resx" />
+    <EmbeddedResource Include="PawnManagement\WaitWindowGUI.resx" />
+    <EmbeddedResource Include="Rokad\FORMS\FormLedgerMasterAddUpdate.resx" />
+    <EmbeddedResource Include="Scannerapplication\Form1.resx" />
+    <EmbeddedResource Include="sgdm\MainForm.resx" />
+    <EmbeddedResource Include="SignUpDemo\Form1.resx" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

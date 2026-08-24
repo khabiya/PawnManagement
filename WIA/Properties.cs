@@ -1,0 +1,16 @@
+﻿
+
+using System.Runtime.CompilerServices;
+using System.Runtime.InteropServices;
+
+namespace WIA
+{
+  [CompilerGenerated]
+  [Guid("40571E58-A308-470A-80AA-FA10F88793A0")]
+  [CoClass(typeof (object))]
+  [TypeIdentifier]
+  [ComImport]
+  public interface Properties : IProperties
+  {
+  }
+}
